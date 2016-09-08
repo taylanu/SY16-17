@@ -5,7 +5,7 @@ public class Robot extends Monster
     //ARGS:  row, col, image collection
    public Robot(int r, int c, String[][][] image)
    {
-      super("BoobooTron", r, c, image, 15, 100, 2, 30, 50, "BEAM", 1);
+      super("BoobooTron", r, c, image, 15, 100, 2, 30, 0, "BEAM", 1);
          //super ARGS:  name, row, col, image collection, animation delay, stomp power, speed penalty, reload time, walk Damage, projectileType, burnDamage
       setHead360(true);				//we can turn canon (head) 360 degrees
       setEnergyAbsorber(true);	//we don't eat enemy units but can absorb energy from electric towers, power plants and trains (and short circuit in water)
