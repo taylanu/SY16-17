@@ -537,6 +537,7 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
 
 //pre:   the human player is at index 0 of the players array, possible player 2 at index 1 of the players array
 //post:  handles collsions between players and bullets
+//NOTE THIS MAY BE THE METHOD TO BE MODIFIIED FOR IMPERVIOUS TO BULLETS
    public static void checkCollisions()
    {
       for(int i=0; i<players.length; i++)
@@ -686,6 +687,7 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                   if(i==0)
                      painTime = numFrames; 
                }	//***END MONSTER GETS HIT
+               
                if(shot.getType().startsWith("SHRIEK") && !curr.isFlying())
                   explosions.add(new Explosion("SMALL", x2-(cellSize/2), y2-(cellSize/2), puffImages, animation_delay));
                else
@@ -1599,14 +1601,14 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
             needToStart = true;     //select Blop
          }
          // else if(k==KeyEvent.VK_5)		//hit 5 key - pick random vehicle or The-Blop
-//          {
+         //          {
              // if(gameMode == CITY_SAVER)
-//             {
-//                monsterType = (int)(Math.random()*4);
-//                needToStart = true;
-//             }
+         //             {
+         //                monsterType = (int)(Math.random()*4);
+         //                needToStart = true;
+         //             }
             //****************************************** 
-//         }
+         //         }
          else if(k==KeyEvent.VK_6)		//hit 6 key
          {
          
