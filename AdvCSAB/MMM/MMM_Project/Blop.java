@@ -1,12 +1,12 @@
  //Mash, Mangle & Munch - Rev Dr Douglas R Oberle, July 2012  doug.oberle@fcps.edu
  //Entity <- Player <- (abstract) Monster <- Gorilla
  
-public class Gorilla extends Monster
+public class Blop extends Monster
 {
  //ARGS:  row, col, image collection
-   public Gorilla(int r, int c, String[][][] image)
+   public Blop(int r, int c, String[][][] image)
    {
-      super("King-Clunk", r, c, image, 10, 30, 0, 0, 10, "CAR", 5);
+      super("Blop", r, c, image, 20, 30, 1, 0, 90, "GLOP", 50);
       //super ARGS:  name, row, col, image collection, animation delay, stomp power, speed penalty, reload time, walk damage, projectileType, burnDamage
       setIsThrower(true);			//we can pick up and throw projectiles
       setIsAmbidextorous(true);	//we can grab and hold with both hands
@@ -15,9 +15,9 @@ public class Gorilla extends Monster
    }
 
   //ARGS:  name, row loc, col loc, image collection, stomp power, speed penalty, reload time		
-   public Gorilla(String n, int r, int c, String[][][] image, int sp, int spp, int rt)
+   public Blop(String n, int r, int c, String[][][] image, int sp, int spp, int rt)
    {
-      super (n,  r, c, image, 10, sp, spp, rt, 10, "CAR", 5);
+      super (n,  r, c, image, 20, sp, spp, rt, 90, "GLOP", 50);
       setIsThrower(true);
       setIsAmbidextorous(true);
       setDamageInWater(true);
@@ -26,8 +26,8 @@ public class Gorilla extends Monster
 
  //returns true if the monster can grab the unit of type specified by name
    @Override
-public boolean canGrabUnit(String name)
-   {
+   public boolean canGrabUnit(String name)
+   {// NEEDS TO BE MODIFIED FOR BLOP
       if(name.startsWith("CYCLE") || name.startsWith("CAR") || name.startsWith("CROWD") || name.equals("AIR newscopter"))
          return true;
       return false;
@@ -35,7 +35,7 @@ public boolean canGrabUnit(String name)
 
 //grabs a unit of type specified by name
    @Override
-public void grabUnit(String name)
+   public void grabUnit(String name)
    {
       String[] contents = super.getClawContents();
       if(contents[0].equals("empty"))
@@ -47,7 +47,7 @@ public void grabUnit(String name)
 
  //post:  returns the type that the monster shoots
    @Override
-public String projectileType()
+   public String projectileType()
    {
       String[] contents = super.getClawContents();
       if(!contents[0].startsWith("CROWD") && !contents[0].startsWith("empty"))
@@ -59,7 +59,7 @@ public String projectileType()
    
 	   //eats a unit and updates health and claw contents
    @Override
-public void eatUnit()
+   public void eatUnit()
    {
       String[] contents = super.getClawContents();
       int index = -1;		//index of claw contents that are full
@@ -98,7 +98,7 @@ public void eatUnit()
    }
 
    @Override
-public String reloadingMessage()
+   public String reloadingMessage()
    {
       return "Nothing to throw!";
    }

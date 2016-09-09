@@ -1187,8 +1187,11 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                   players[AIPLAYER] = new Dinosaur(coord[0], coord[1], playerImages[1]);
                else if(monsterType == 3)
                   players[AIPLAYER] = new Robot(coord[0], coord[1], playerImages[2]);
-               else// if(monsterType == 4)
+               else if(monsterType == 4)
                   players[AIPLAYER] = new Insect(coord[0], coord[1], playerImages[3]);  
+               else // if (monsterType == 5)
+                  players[AIPLAYER] = new Blop(coord[0],coord[1],playerImages[4]);
+                  
             
                if(!players[AIPLAYER].isSwimmer() && board[coord[0]][coord[1]][panel].equals("~~~"))
                {
@@ -1334,8 +1337,10 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                      players[PLAYER2] = (new Dinosaur("Gobzilly",  coord[0], coord[1], playerImages[1], 100, 0, 30));
                   else if(monsterType == 3)
                      players[PLAYER2] = (new Robot("BoobooTron",  coord[0], coord[1], playerImages[2], 100, 0, 30));
-                  else //if(monsterType == 4)
-                     players[PLAYER2] = (new Insect("WoeMantis",  coord[0], coord[1], playerImages[3], 100, 0, 30));   
+                  else if (monsterType == 4)
+                     players[PLAYER2] = (new Insect("WoeMantis",  coord[0], coord[1], playerImages[3], 100, 0, 30)); 
+                  else // if (monsterType == 5)
+                     players[PLAYER2] = new Blop("Blop", coord[0],coord[1],playerImages[4],100,0,30);  
                }
                else
                {
@@ -1347,8 +1352,10 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                      players[PLAYER2] = new Dinosaur(coord[0], coord[1], playerImages[1]);
                   else if(monsterType == 3)
                      players[PLAYER2] = new Robot(coord[0], coord[1], playerImages[2]);
-                  else //if(monsterType == 4)
+                  else if(monsterType == 4)
                      players[PLAYER2] = new Insect(coord[0], coord[1], playerImages[3]);
+                  else // if (monsterType == 5)
+                     players[PLAYER2] = new Blop(coord[0],coord[1],playerImages[4]);  
                }
                if(!players[PLAYER2].isSwimmer() && board[coord[0]][coord[1]][panel].equals("~~~"))
                {
@@ -1587,15 +1594,19 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
             monsterType = 4;			//select WoeMantis
             needToStart = true; 
          }
-         else if(k==KeyEvent.VK_5)		//hit 5 key - pick random vehicle or The-Blop
-         {
-            if(gameMode == CITY_SAVER)
-            {
-               monsterType = (int)(Math.random()*4);
-               needToStart = true;
-            }
-            //****************************************** 
+         else if (k==KeyEvent.VK_5){
+            monsterType = 5;        // hit 5 key
+            needToStart = true;     //select Blop
          }
+         // else if(k==KeyEvent.VK_5)		//hit 5 key - pick random vehicle or The-Blop
+//          {
+             // if(gameMode == CITY_SAVER)
+//             {
+//                monsterType = (int)(Math.random()*4);
+//                needToStart = true;
+//             }
+            //****************************************** 
+//         }
          else if(k==KeyEvent.VK_6)		//hit 6 key
          {
          
@@ -1681,8 +1692,10 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                      players[PLAYER1] = (new Dinosaur("Gobzilly", coord[0], coord[1], playerImages[1], 100, 0, 30));
                   else if(monsterType == 3)
                      players[PLAYER1] = (new Robot("BoobooTron", coord[0], coord[1], playerImages[2], 100, 0, 30));
-                  else// if(monsterType == 4)
+                  else if(monsterType == 4)
                      players[PLAYER1] = (new Insect("WoeMantis",  coord[0], coord[1], playerImages[3], 100, 0, 30));
+                  else // if (monsterType == 5)
+                     players[PLAYER1] = new Blop("Blop", coord[0],coord[1],playerImages[4],100,0,30);  
                }
                else
                {	
@@ -1700,8 +1713,10 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                      players[PLAYER1] = new Dinosaur(coord[0], coord[1], playerImages[1]);
                   else if(monsterType == 3)
                      players[PLAYER1] = new Robot(coord[0], coord[1], playerImages[2]);
-                  else //if(monsterType == 4)
+                  else if(monsterType == 4)
                      players[PLAYER1] = new Insect(coord[0], coord[1], playerImages[3]); 
+                  else // if (monsterType == 5)
+                     players[PLAYER1] = new Blop(coord[0],coord[1],playerImages[4]); 
                }
                if(players[PLAYER1].healInWater())
                {
@@ -2183,7 +2198,7 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
 
 
    @Override
-public void paintComponent(Graphics g)
+   public void paintComponent(Graphics g)
    {
       super.paintComponent(g); 
       ImageDisplay.drawMainScreen(g);
@@ -2193,7 +2208,7 @@ public void paintComponent(Graphics g)
    private class Listener implements ActionListener
    {
       @Override
-	public void actionPerformed(ActionEvent e)	//this is called for each timer iteration - make the enemy move randomly
+      public void actionPerformed(ActionEvent e)	//this is called for each timer iteration - make the enemy move randomly
       {
          if(numFrames == Integer.MAX_VALUE)					//roll over frame count and reset shot times if we get to max int value
          {
@@ -2247,7 +2262,7 @@ public void paintComponent(Graphics g)
 
 //***BEGIN MOUSE STUFF***
    @Override
-public void mouseClicked( MouseEvent e )
+   public void mouseClicked( MouseEvent e )
    {
       if(titleScreen)
       {
@@ -2309,19 +2324,19 @@ public void mouseClicked( MouseEvent e )
    }
 
    @Override
-public void mousePressed( MouseEvent e )
+   public void mousePressed( MouseEvent e )
    {}
 
    @Override
-public void mouseReleased( MouseEvent e )
+   public void mouseReleased( MouseEvent e )
    {}
 
    @Override
-public void mouseEntered( MouseEvent e )
+   public void mouseEntered( MouseEvent e )
    {}
 
    @Override
-public void mouseMoved( MouseEvent e)
+   public void mouseMoved( MouseEvent e)
    {
       mouseX = e.getX();
       mouseY = e.getY();
@@ -2445,15 +2460,15 @@ public void mouseMoved( MouseEvent e)
    }
 
    @Override
-public void mouseDragged( MouseEvent e)
+   public void mouseDragged( MouseEvent e)
    {}
 
    @Override
-public void mouseExited( MouseEvent e )
+   public void mouseExited( MouseEvent e )
    {}
 
    @Override
-public void mouseWheelMoved(MouseWheelEvent e) 
+   public void mouseWheelMoved(MouseWheelEvent e) 
    {
       if(gameStarted && !pause)
       {
