@@ -657,6 +657,10 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                   int dam = shot.getPower();
                   if(shot.getOwner()>=0 && shot.getOwner() < players.length && (players[shot.getOwner()] instanceof Monster))//monster friendly fire, do half damage
                      dam /= 2;
+                  if(curr.imperviousToBullets() && shot.getType().startsWith("BULLET"))
+                     dam = 0;
+                     
+                     
                   int mr = curr.getRow();
                   int mc = curr.getCol();	//if monster is hiding in buildings, lessen the damage and deal some to the buildings as well
                   if(structures[mr][mc][panel]!=null && structures[mr][mc][panel].getHealth() > 0 )
@@ -693,6 +697,9 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                else
                   if(shot.getType().startsWith("BULLET"))
                   {
+                     if(curr.imperviousToBullets()){
+                        continue;
+                     }
                      explosions.add(new Explosion("SMALL", x2-(cellSize/2), y2-(cellSize/2), puffImages, animation_delay));
                   }
                   else
@@ -745,11 +752,13 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
          }
       } 
    }
-
+//THIS MAY BE METHOD TO MODIFY TO SPLIT
 //post:  if the blop has split and we are close enough, recombine them.  If the blop hasn't split and we have 100 health, split it
    public static void splitTheBlop(Monster curr)
    {
-   
+//    if(curr.blopSplit){
+//    
+//    }
    }
 
 
@@ -778,7 +787,7 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
          else  
             if(curr.canSplit())			   //splitters doesn't shoot, but can separate for the price of health	
             {
-               splitTheBlop(curr);
+               splitTheBlop(curr); //this call signifies that I have to modify the above method.
                return;
             }
             else
@@ -1600,15 +1609,15 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
             monsterType = 5;        // hit 5 key
             needToStart = true;     //select Blop
          }
-         // else if(k==KeyEvent.VK_5)		//hit 5 key - pick random vehicle or The-Blop
-         //          {
-             // if(gameMode == CITY_SAVER)
-         //             {
-         //                monsterType = (int)(Math.random()*4);
-         //                needToStart = true;
-         //             }
+         else if(k==KeyEvent.VK_5)		//hit 5 key - pick random vehicle or The-Blop
+         {
+            if(gameMode == CITY_SAVER)
+            {
+               monsterType = (int)(Math.random()*4);
+               needToStart = true;
+            }
             //****************************************** 
-         //         }
+         }
          else if(k==KeyEvent.VK_6)		//hit 6 key
          {
          
@@ -1678,6 +1687,8 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                int[] coord = new int[2];
                coord[0] =  board.length/2;
                coord[1] =  board[0].length/2;
+               
+               // STEP 1 IS LOCATED HERE
                if(gameMode==EARTH_INVADERS)
                {
                   int numPlayers = 67;
@@ -1697,7 +1708,7 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
                   else if(monsterType == 4)
                      players[PLAYER1] = (new Insect("WoeMantis",  coord[0], coord[1], playerImages[3], 100, 0, 30));
                   else // if (monsterType == 5)
-                     players[PLAYER1] = new Blop("Blop", coord[0],coord[1],playerImages[4],100,0,30);  
+                     players[PLAYER1] = new Blop("Blop", coord[0],coord[1],playerImages[4],100, 0, 30);  
                }
                else
                {	
@@ -2073,7 +2084,17 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
          if(curr instanceof Monster)		//monster player
          {
             Utilities.walkDamage((Monster)(curr), r, c, panel);
+                //pre: 	r and c must be valid indecies of the board in MyGridExample
+         //			image must at least be of size 1 x 1 and contain String values of image file names
+         //			ad >= 1
+         //			image has the healthy structure animations in row 0, destroyed animaions in row 1
+         //			a neg health means the structure is passable and destroyable (trees and small buildings)
+         //ARGS:  name, row, col, panel, image collection, animation delay, is passable?, is destroyable?, structure height, health, image size, image index, property value
+            //RECKLESS COPY PASTA
+            if(curr.slimeTrail() && structures[r][c][panel]==null && !board[r][c][panel].equals("~~~")) 
+               structures[r][c][panel] = new Structure("Blop-Glop", r, c, panel, blopGlopImages, animation_delay, true, true, 1, -1, cellSize, (int)(Math.random()*blopGlopImages.length), 0);
          
+           
             if(((Monster)(curr)).isJumping() && ((Monster)(curr)).hitJumpPeak() && ((Monster)(curr)).getJumpAlt() <= 0)
             {  
                ((Monster)(curr)).setIsJumping(false);

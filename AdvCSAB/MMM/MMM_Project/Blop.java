@@ -8,20 +8,23 @@ public class Blop extends Monster
    {
       super("Blop", r, c, image, 20, 30, 1, 0, 90, "GLOP", 50);
       //super ARGS:  name, row, col, image collection, animation delay, stomp power, speed penalty, reload time, walk damage, projectileType, burnDamage
-      setIsThrower(true);			//we can pick up and throw projectiles
-      setIsAmbidextorous(true);	//we can grab and hold with both hands
-      setDamageInWater(true);		//we drown in water
-      setLessAppetite(true);		//we don't get hungry as fast
+      setImperviousToBullets(true); //impervious
+      setIsSwimmer(true);
+      setCanSplit(true);
+      setSlimeTrail(true);
+      setCanEatAll(true);
+      
    }
 
   //ARGS:  name, row loc, col loc, image collection, stomp power, speed penalty, reload time		
    public Blop(String n, int r, int c, String[][][] image, int sp, int spp, int rt)
    {
       super (n,  r, c, image, 20, sp, spp, rt, 90, "GLOP", 50);
-      setIsThrower(true);
-      setIsAmbidextorous(true);
-      setDamageInWater(true);
-      setLessAppetite(true);
+      setImperviousToBullets(true); //impervious
+      setSlimeTrail(true);
+      setIsSwimmer(true);
+      setCanSplit(true);
+      setCanEatAll(true);
    }
 
  //returns true if the monster can grab the unit of type specified by name

@@ -8,6 +8,8 @@ import java.io.FileReader;
 import java.io.File;
 import java.util.Scanner;
 import java.awt.event.KeyEvent;
+import java.util.Base64; //necessary for encoding/decoding
+import java.nio.charset.StandardCharsets; //necessary for encoding/decoding
 
   //handles miscelaneous methods and file IO for highscores
 public class Utilities extends MMMPanel
@@ -30,21 +32,32 @@ public class Utilities extends MMMPanel
    
       return false;		//temporary value to keep things compiling
    }
-
+ // THIS METHOD WILL BE USED FOR DECRPYTION
   //pre:  word != null, word has been encoded with an encryption
   //post: returns the word decoded
    public static String decode(String word)
    {
-     
-      return word;		//temporary value to keep things compiling
+      // byte[] decodeBytes = word.getBytes(StandardCharsets.UTF_8);
+      byte[] decodedArr = Base64.getDecoder().decode(word);
+      // Base64.Decoder Decode = new Base64.getDecoder();
+      // byte[] decodeBytes = Decode.decode(word.getBytes());
+     //LOOK INTO BASE64 ENCODE AND DECODE
+     String decoded = new String(decodedArr);
+      return decoded;		//temporary value to keep things compiling
    }
 
+// THIS METHOD WILL BE USED FOR ENCRPYTION
   //pre:  word != null, word has not been encoded with an encryption
   //post: returns the word encoded with an encryption
    public static String encode(String word)
    {
+     //LOOK INTO BASE64 ENCODE AND DECODE
+      byte[] encodeBytes = word.getBytes(StandardCharsets.UTF_8);
+      String encodedStr = Base64.getEncoder().encodeToString(encodeBytes);
+      //System.out.println(encoded);
+      //System.out.println("encodedBytes " + new String(encodedBytes));
      
-      return word;		//temporary value to keep things compiling
+      return encodedStr;		//temporary value to keep things compiling
    }
 
 
@@ -90,11 +103,13 @@ public class Utilities extends MMMPanel
             try
             {
                String sentence = input.nextLine();
-               String [] parts = sentence.split(" ");
+               String [] wordstuff = (decode(sentence)).split(" ");
             	
-               damage=Long.parseLong(decode(parts[0]));		//propertyDamage (score)
-               name = decode(parts[1]);							//monster name
-               time = Integer.parseInt(decode(parts[2]));	//time expired
+               
+               
+               damage = Long.parseLong(wordstuff[0]);		//propertyDamage (score)
+               name = wordstuff[1];							//monster name
+               time = Integer.parseInt(wordstuff[2]);	//time expired
             }
             catch (java.util.InputMismatchException ex1)			//file is corrupted or doesn't exist - clear high scores and remake the file
             {
@@ -121,7 +136,7 @@ public class Utilities extends MMMPanel
          writeToFile(scores, fileName);
       }				
    }
-
+//THIS METHOD MAY BE NEEDED FOR HIGHSCORES
 //post: writes to file highScores
    public static void writeToFile(playerScore[] array, String filename)
    {
@@ -135,7 +150,7 @@ public class Utilities extends MMMPanel
       {
       } 
    }
-
+//THIS METHOD MAY BE NEEDED FOR HIGHSCORES
 //post: inserts new highscore in to array if it is in the top 5
    public static void updateHighScores(playerScore[] nums)
    {
