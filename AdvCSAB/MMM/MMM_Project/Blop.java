@@ -1,5 +1,5 @@
  //Mash, Mangle & Munch - Rev Dr Douglas R Oberle, July 2012  doug.oberle@fcps.edu
- //Entity <- Player <- (abstract) Monster <- Gorilla
+ //Entity <- Player <- (abstract) Monster <- Blop
  
 public class Blop extends Monster
 {

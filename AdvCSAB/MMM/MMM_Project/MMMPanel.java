@@ -756,9 +756,21 @@ public class MMMPanel extends JPanel implements MouseListener, MouseMotionListen
 //post:  if the blop has split and we are close enough, recombine them.  If the blop hasn't split and we have 100 health, split it
    public static void splitTheBlop(Monster curr)
    {
-//    if(curr.blopSplit){
-//    
-//    }
+      if(curr.canSplit() && curr.getHealth() == 100){
+         players[BLOPSPLIT] = new Blop(curr.getRow(),curr.getCol(),playerImages[4]);
+         curr.setHealth(curr.getHealth()/2);
+      }
+      int x1 =curr.findX(cellSize);			//copied from vehicle method         
+      int y1 =curr.findY(cellSize);
+        
+      int x2 = players[BLOPSPLIT].findX(cellSize);		
+      int y2 = players[BLOPSPLIT].findY(cellSize);
+      if(Utilities.distance(x1, y1, x2, y2) <= (cellSize/2)){
+         players[BLOPSPLIT] = null;
+         explosions.add(new Explosion("SMALL", x2-(cellSize/2), y2-(cellSize/2), puffImages, animation_delay));
+         curr.setHealth(curr.getHealth()+ (int)(Math.random()*100) + 50);
+      }
+      //DEPRECATED CONDITION : (curr.getRow() + players[BLOPSPLIT].getRow()=1 || curr.getRow() + players[BLOPSPLIT].getRow()=-1) && (curr.getCol() + players[BLOPSPLIT].getCol() = 1 || curr.getCol() + players[BLOPSPLIT].getCol() = -1)
    }
 
 
