@@ -1,0 +1,13 @@
+Network+ Study Guide Chapter 5	8:30 AM 9/29/2016	Taylan Unal
+
+5.1 IP Configuration
+IP Addresses operate at Layer 3 of the OSI Model (Network). Unique hosts are assigned unique IP addresses on the network.
+Each portion of an IP address is an octet consisting of 8 bits. Values from 0-255.
+Subnet masks also have 4 octets, where first 2  identify the subnet and the second two identify the host.
+5 IP Address Classes; each identified by first octet.
+Class A: 1-126 255.0.0.0; Class B: 128-191 255.255.0.0; Class C: 192-223 255.255.255.0
+Class D: 224-239 (multicast, used with multiple hosts); Class E 240-255 (experimental IPs only). These classes do not have specified subnet masks.
+
+Broadcast Address (255) cannot be assigned to a host, but rather can only be a part of the subnet mask.
+
+5.2 Subnetting

@@ -1,0 +1,41 @@
+Network+ Study Guide		Taylan Unal		9/12/16
+
+1.1 Networking Overview:
+PAN: Personal Area Network. Generally Bluetooh or NFC connections.
+LAN: Local Area Network. Devices connected by a router. WLAN is wireless Local Area Network.
+WAN: Connection of Local Area Networks that together form a Wide Area Network
+MAN: Connection of many WAN in a metropolitan area.
+Internetwork: Link between two or more organizations
+Internet: Large public network of information accessible by all users.
+Intranet: Information only accessible from within an organization. Private availability only.
+Extranet: Authorized external users can access organization's information. 
+
+Networks are made up of computers (nodes/hosts), transmission media (cables,etc), network interfaces, and protocols.
+Networks are worth the cost because of ability to share resources within an organization.
+
+1.2 Networking Topologies:
+Bus: Topology where all nodes are linked by a single cable. Series connection. Any breaks would cause a complete communication failure across the network.
+Ring: Where all computers are linked by a ring shape where data is passed 'downstream' and any break would stop communications down stream. Series connection.
+Star: Centrally connected network where data sent to router, then to nodes. Much greater redundancy and resistance to failure.
+Mesh: Redundant network where each node needs its own network adapter and a connection to each of the other nodes. In wired networks, mesh topologies are incredibly costly, and may not be effective to a degree. However, while using wireless connections, mesh topologies are effective, and automatic, as each device may talk to others without wiring.
+
+1.3 OSI Model (Open Systems Interconnection-1983): Application-Presentation-Session-Transport-Network-DataLink-Physical
+Standardizes network communications implementations.
+Works with non-proprietary links. Packages that are sent, travel from top down, and packages that are received travel from bottom up.
+Acronym: All People Seem To Need Data Processing
+Both the physical and data link layers work at the hardware level, but the top 5 layers work at the software level. 
+It can also be described that the top 3 layers (HTTP/DNS) act as application layers, the next two are transport layers, and the bottom two are architecture layers.
+Many times protocols move and use other tools top down.
+
+7 Application= Ex. HTTP, FTP, TTP, and SMTP. Intersection of network functionality and Enables communications between network clients and services.
+6 Presentation= Ex. Syntax, encryption, compression, SSL. Encryption and data format.
+5 Session= Addressed the Session ID for the connection, to identify unique connections.
+4 Transport= Segments files into packets. TCP(connection-based) and UDP(connectionless) run at this stage. Ports are assigned here.
+3 Network= Ex. Routing IP Address assigned. Packets are created when source and target IP addresses are added to data. Controls how messages are propagated across a network.
+2 Data Link= Ex. LLC/MAC Address CRC made up the frame. CRC= Cyclic redundancy check. MAC Address identifies network adapter. Includes 
+1 Physical= CAT6/5e/5 network cables, RJ45, RJ11, Hubs.
+
+MAC sublayer defines unique hardware addresses for each network interface, and controls access to the LAN.
+Port #'s are assigned to services like mail and web servers so that transport layers knows where to redirect traffic up the OSI layers.
+
+OSI Travel = Sender : APSTNDP -> Receiver : PDNTSPA 
