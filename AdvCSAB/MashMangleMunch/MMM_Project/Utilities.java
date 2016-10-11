@@ -39,8 +39,6 @@ public class Utilities extends MMMPanel
    {
       // byte[] decodeBytes = word.getBytes(StandardCharsets.UTF_8);
       byte[] decodedArr = Base64.getDecoder().decode(word);
-      // Base64.Decoder Decode = new Base64.getDecoder();
-      // byte[] decodeBytes = Decode.decode(word.getBytes());
      //LOOK INTO BASE64 ENCODE AND DECODE
      String decoded = new String(decodedArr);
       return decoded;		//temporary value to keep things compiling
