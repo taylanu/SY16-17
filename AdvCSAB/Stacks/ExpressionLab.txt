@@ -1,0 +1,41 @@
+Print Your Name __________________________________________________________________
+
+
+Part I.
+A postfix expression lists operators after operands (post = after).  The infix expression 5 + 7 becomes 5 7 + in postfix.  The advantage of postfix is that it can be evaluated more easily than infix.  Your job is to evaluate a postfix expression stored as a string.
+
+You may assume that each character in the string is either a digit or an operator (+, -, *, /).  You may assume that each operand is only a single digit.  You do not have to input the expression to be evaluated; for instance, in main you might have a command like:
+
+	String s = "57+";
+	int x = evaluate(s);
+	System.out.println(s + " = " + x);
+
+where the output should show "57+ = 12".
+
+The algorithm for evaluating a postfix expression involves a stack.  Loop over the expression (remember, it's stored as a string).  For each symbol, or character in this case, do one of two things:
+
+	If the symbol is an operand, just push it on the stack.
+
+	If the symbol is an operator, pop the top two operands from the stack, 
+	apply the appropriate operation, and push the result back on the stack.
+
+At the end of this process the result of the entire expression will be the only item left on the stack.  You may assume that the string contains a valid postfix expression (our algorithm does not do error checking).  Use an ap.ArrayStack object.
+
+Trace the algorithm for "354*+7*", which equals 161.
+
+
+
+Part II.
+No one wants to write out an expression in postscript, so we want to be able to translate an infix expression to postfix.  Given the input string "(3+5*4)*7" we want to produce "354*+7*", which of course we now know how to evaluate.  Assume you'll be given a valid infix expression.  To convert to postscript, loop over the string.  For each character:
+
+	If it's an operand, append it to the postfix string.
+
+	If it's a left paren, push it on the stack.
+
+	If it's a right paren, pop from the stack to the postfix string until you reach a left paren.
+
+	If it's an operator, pop from the stack to the postfix string until either the stack is empty or you encounter an operator on the stack that is of lower precedence than the current symbol (it should stay on the stack), then push the current operator onto the stack.
+
+At the end of this process the result will be stored in the postfix string.  You may assume that the input string contains a valid infix expression.  Use an ap.ArrayStack object.
+
+Trace the algorithm for "(3+5*4)*7", which equals "354*+7*" in postfix.

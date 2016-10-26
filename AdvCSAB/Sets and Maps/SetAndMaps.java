@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH;
+
 import java.io.*;
 import java.util.*;
 //COMPLETE THE METHODS BELOW:  extra credit for using iterators
@@ -39,27 +41,31 @@ class java.util.TreeMap implements java.util.Map
 public class SetAndMaps
 {
 //post:  this will return a HashSet of all the elements from s1 and s2
+//http://www.leveluplunch.com/java/examples/union-of-two-sets/
    public static Set union(Set s1, Set s2)
    {
-      Set ans = new HashSet();	
-      //***COMPLETE THIS METHOD***
+      Set ans = new HashSet(s1);	
+      ans.addAll(s2);
+	//System.out.println(ans);
       return ans;
-   }
-
+  }
 //post: this will return only those elements common to both s1 and s2
+//http://www.leveluplunch.com/java/examples/intersection-of-two-sets/
    public static Set intersection(Set s1, Set s2)
    {
-      Set ans = new HashSet();
-     //***COMPLETE THIS METHOD***
+      Set ans = new HashSet(s1);
+     ans.retainAll(s2);
+     //System.out.println(ans);
       return ans;
    }
 
 //post: this will return the elements of s1 that are not in s2
+//http://www.leveluplunch.com/java/examples/difference-of-two-sets/
    public static Set difference(Set s1, Set s2)
-   
    {
-      Set ans = new HashSet();
-       //***COMPLETE THIS METHOD***  
+      Set ans = new HashSet(s1);
+      ans.removeAll(s2);
+       //System.out.println(ans); 
       return ans;
    }
 
@@ -67,9 +73,15 @@ public class SetAndMaps
 //			also known as the opposite of intersection (think union - intersection)
    public static Set exclusion(Set s1, Set s2)
    {
-      Set ans = new HashSet();
-       //***COMPLETE THIS METHOD***     
-      return ans;
+      Set ansU = new HashSet(s1);
+      ansU.addAll(s2); //UNION
+      Set ansI = new HashSet(s1);
+      ansI.retainAll(s2);//INTERSECTION
+      
+      Set exclans = new HashSet(ansU);
+      exclans.removeAll(ansI);// DIFFERENCE
+        //System.out.println(ans);     
+      return exclans;
    }
 
 //post:  will return a map whose keySet is comprised of all the values in m
@@ -77,10 +89,21 @@ public class SetAndMaps
 //i.e. if m is a treeMap of students (keys) and grades (values), then flip returns
 //a TreeMap of grades (keys) and all the students who made that grade in an ArrayList (value)
 
-   public static Map flip(Map<String, String> m)
+   public static Map flip(Map<String,String> m)
    {
       Map<String, ArrayList<String>> ans = new TreeMap();
-       //***COMPLETE THIS METHOD***
+      for (String key : m.keySet()){
+         String val= m.get(key);
+          if(!ans.containsKey(val)) {
+              ArrayList<String> list = new ArrayList<String>();
+              list.add(key);
+              ans.put(val,list);//m.get gets the value at the key
+          }
+          else{
+              (ans.get(val)).add(key);
+          }
+      }
+
       return ans;
    }
 
@@ -155,5 +178,4 @@ public class SetAndMaps
       System.out.println(byGrade+"\n");
    //{A=[Samantha, Scary], B=[MaryAnne, Posh, Sporty], C=[Baby, Ginger]}
    }
-
 }
