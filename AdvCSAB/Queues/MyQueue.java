@@ -17,6 +17,7 @@
        public E remove()
       {
          return null;
+          //Return the old value that is removed from the queue.
       }
    
        public boolean isEmpty()
@@ -26,7 +27,7 @@
    
        public E peek()
       {
-         return null;
+          return null;//rerurns the top value of the queue without removing or modifying the value.
       }
    
        public int size()
