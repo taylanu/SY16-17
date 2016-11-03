@@ -1,6 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH;
-
-import java.io.*;
 import java.util.*;
 //COMPLETE THE METHODS BELOW:  extra credit for using iterators
 
@@ -38,144 +35,138 @@ class java.util.TreeMap implements java.util.Map
 //places Objects into a balanced search tree
 */
 
-public class SetAndMaps
-{
-//post:  this will return a HashSet of all the elements from s1 and s2
+public class SetAndMaps {
+    //post:  this will return a HashSet of all the elements from s1 and s2
 //http://www.leveluplunch.com/java/examples/union-of-two-sets/
-   public static Set union(Set s1, Set s2)
-   {
-      Set ans = new HashSet(s1);	
-      ans.addAll(s2);
-	//System.out.println(ans);
-      return ans;
-  }
-//post: this will return only those elements common to both s1 and s2
+    public static Set union(Set s1, Set s2) {
+        Set ans = new HashSet(s1);
+        ans.addAll(s2);
+        //System.out.println(ans);
+        return ans;
+    }
+
+    //post: this will return only those elements common to both s1 and s2
 //http://www.leveluplunch.com/java/examples/intersection-of-two-sets/
-   public static Set intersection(Set s1, Set s2)
-   {
-      Set ans = new HashSet(s1);
-     ans.retainAll(s2);
-     //System.out.println(ans);
-      return ans;
-   }
+    public static Set intersection(Set s1, Set s2) {
+        Set ans = new HashSet(s1);
+        ans.retainAll(s2);
+        //System.out.println(ans);
+        return ans;
+    }
 
-//post: this will return the elements of s1 that are not in s2
+    //post: this will return the elements of s1 that are not in s2
 //http://www.leveluplunch.com/java/examples/difference-of-two-sets/
-   public static Set difference(Set s1, Set s2)
-   {
-      Set ans = new HashSet(s1);
-      ans.removeAll(s2);
-       //System.out.println(ans); 
-      return ans;
-   }
+    public static Set difference(Set s1, Set s2) {
+        Set ans = new HashSet(s1);
+        ans.removeAll(s2);
+        //System.out.println(ans);
+        return ans;
+    }
 
-//post:  this will return only those elements that are unique to s1 and unique to s2
+    //post:  this will return only those elements that are unique to s1 and unique to s2
 //			also known as the opposite of intersection (think union - intersection)
-   public static Set exclusion(Set s1, Set s2)
-   {
-      Set ansU = new HashSet(s1);
-      ansU.addAll(s2); //UNION
-      Set ansI = new HashSet(s1);
-      ansI.retainAll(s2);//INTERSECTION
-      
-      Set exclans = new HashSet(ansU);
-      exclans.removeAll(ansI);// DIFFERENCE
+    public static Set exclusion(Set s1, Set s2) {
+        Set ansU = new HashSet(s1);
+        ansU.addAll(s2); //UNION
+        Set ansI = new HashSet(s1);
+        ansI.retainAll(s2);//INTERSECTION
+
+        Set exclans = new HashSet(ansU);
+        exclans.removeAll(ansI);// DIFFERENCE
         //System.out.println(ans);     
-      return exclans;
-   }
+        return exclans;
+    }
 
 //post:  will return a map whose keySet is comprised of all the values in m
 //			and whose values are arrays of all the keys from m that mapped to that value
 //i.e. if m is a treeMap of students (keys) and grades (values), then flip returns
 //a TreeMap of grades (keys) and all the students who made that grade in an ArrayList (value)
 
-   public static Map flip(Map<String,String> m)
-   {
-      Map<String, ArrayList<String>> ans = new TreeMap();
-      for (String key : m.keySet()){
-         String val= m.get(key);
-          if(!ans.containsKey(val)) {
-              ArrayList<String> list = new ArrayList<String>();
-              list.add(key);
-              ans.put(val,list);//m.get gets the value at the key
-          }
-          else{
-              (ans.get(val)).add(key);
-          }
-      }
+    public static Map flip(Map<String, String> m) {
+        Map<String, ArrayList<String>> ans = new TreeMap();
+        for (String key : m.keySet()) {
+            String val = m.get(key);
+            if (!ans.containsKey(val)) {
+                ArrayList<String> list = new ArrayList<String>();
+                list.add(key);
+                ans.put(val, list);//m.get gets the value at the key
+            } else {
+                (ans.get(val)).add(key);
+            }
+        }
 
-      return ans;
-   }
+        return ans;
+    }
 
-   public static void main(String[] arg)
-   
-   {
-      Set<String> keyOfG = new HashSet();
-      keyOfG.add("G");
-      keyOfG.add("Am");
-      keyOfG.add("Bm");
-      keyOfG.add("C");
-      keyOfG.add("D");
-      keyOfG.add("Em");
-      keyOfG.add("F#m7dim5");
-   
-      Set<String> keyOfC = new HashSet();
-      keyOfC.add("C");
-      keyOfC.add("Dm");
-      keyOfC.add("Em");
-      keyOfC.add("F");
-      keyOfC.add("G");
-      keyOfC.add("Am");
-      keyOfC.add("Bm7dim5");
-   
-      System.out.println("Chords in the key of G:");
-      System.out.println(keyOfG+"\n");
-   //[Am, Bm, C, D, Em, F#m7dim5, G]
-   
-      System.out.println("Chords in the key of C:");
-      System.out.println(keyOfC+"\n");
-   //[Am, Bm7dim5, C, Dm, Em, F, G]
-   
-      Set theirU = union(keyOfG, keyOfC);
-      System.out.println("The Union of chords between the keys of G and C:");
-      System.out.println(theirU+"\n");
-   //[C, D, F#m7dim5, F, G, Em, Bm7dim5, Dm, Bm, Am]
-   
-      Set theirI = intersection(keyOfG, keyOfC);
-      System.out.println("The Intersection of chords between the keys of G and C:");
-      System.out.println(theirI+"\n");
-   //[C, G, Em, Am]
-   
-      Set theirD = difference(keyOfG, keyOfC);
-      System.out.println("The Difference in chords between the keys of G and C:");
-      System.out.println(theirD+"\n");
-   //[D, F#m7dim5, Bm]
-   
-      theirD = difference(keyOfC, keyOfG);
-      System.out.println("The Difference in chords between the keys of C and G:");
-      System.out.println(theirD+"\n");
-   //[F, Bm7dim5, Dm]
-   
-      Set theirE = exclusion(keyOfG, keyOfC);
-      System.out.println("The Exclusion of chords between the keys of G and C:");
-      System.out.println(theirE+"\n");
-   //[D, F#m7dim5, F, Bm7dim5, Dm, Bm]
-   
-      Map<String, String> tm = new TreeMap();
-      tm.put("Ginger", "C");
-      tm.put("Scary", "A");
-      tm.put("Posh", "B");
-      tm.put("Sporty", "B");
-      tm.put("Baby", "C");
-      tm.put("MaryAnne", "B");
-      tm.put("Samantha", "A");
-      System.out.println("TreeMap of students (key) with their respective grades (value):");
-      System.out.println(tm+"\n");
-   //{Baby=C, Ginger=C, MaryAnne=B, Posh=B, Samantha=A, Scary=A, Sporty=B}
-   
-      Map<String, ArrayList<String>> byGrade = flip(tm);
-      System.out.println("TreeMap of grades (key) with all the students who made that grade (value):");
-      System.out.println(byGrade+"\n");
-   //{A=[Samantha, Scary], B=[MaryAnne, Posh, Sporty], C=[Baby, Ginger]}
-   }
+    public static void main(String[] arg)
+
+    {
+        Set<String> keyOfG = new HashSet();
+        keyOfG.add("G");
+        keyOfG.add("Am");
+        keyOfG.add("Bm");
+        keyOfG.add("C");
+        keyOfG.add("D");
+        keyOfG.add("Em");
+        keyOfG.add("F#m7dim5");
+
+        Set<String> keyOfC = new HashSet();
+        keyOfC.add("C");
+        keyOfC.add("Dm");
+        keyOfC.add("Em");
+        keyOfC.add("F");
+        keyOfC.add("G");
+        keyOfC.add("Am");
+        keyOfC.add("Bm7dim5");
+
+        System.out.println("Chords in the key of G:");
+        System.out.println(keyOfG + "\n");
+        //[Am, Bm, C, D, Em, F#m7dim5, G]
+
+        System.out.println("Chords in the key of C:");
+        System.out.println(keyOfC + "\n");
+        //[Am, Bm7dim5, C, Dm, Em, F, G]
+
+        Set theirU = union(keyOfG, keyOfC);
+        System.out.println("The Union of chords between the keys of G and C:");
+        System.out.println(theirU + "\n");
+        //[C, D, F#m7dim5, F, G, Em, Bm7dim5, Dm, Bm, Am]
+
+        Set theirI = intersection(keyOfG, keyOfC);
+        System.out.println("The Intersection of chords between the keys of G and C:");
+        System.out.println(theirI + "\n");
+        //[C, G, Em, Am]
+
+        Set theirD = difference(keyOfG, keyOfC);
+        System.out.println("The Difference in chords between the keys of G and C:");
+        System.out.println(theirD + "\n");
+        //[D, F#m7dim5, Bm]
+
+        theirD = difference(keyOfC, keyOfG);
+        System.out.println("The Difference in chords between the keys of C and G:");
+        System.out.println(theirD + "\n");
+        //[F, Bm7dim5, Dm]
+
+        Set theirE = exclusion(keyOfG, keyOfC);
+        System.out.println("The Exclusion of chords between the keys of G and C:");
+        System.out.println(theirE + "\n");
+        //[D, F#m7dim5, F, Bm7dim5, Dm, Bm]
+
+        Map<String, String> tm = new TreeMap();
+        tm.put("Ginger", "C");
+        tm.put("Scary", "A");
+        tm.put("Posh", "B");
+        tm.put("Sporty", "B");
+        tm.put("Baby", "C");
+        tm.put("MaryAnne", "B");
+        tm.put("Samantha", "A");
+        System.out.println("TreeMap of students (key) with their respective grades (value):");
+        System.out.println(tm + "\n");
+        //{Baby=C, Ginger=C, MaryAnne=B, Posh=B, Samantha=A, Scary=A, Sporty=B}
+
+        Map<String, ArrayList<String>> byGrade = flip(tm);
+        System.out.println("TreeMap of grades (key) with all the students who made that grade (value):");
+        System.out.println(byGrade + "\n");
+        //{A=[Samantha, Scary], B=[MaryAnne, Posh, Sporty], C=[Baby, Ginger]}
+    }
 }
