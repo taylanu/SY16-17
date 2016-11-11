@@ -1,101 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24671942-87f8-487e-acd2-b1988afa0a33" name="Default" comment="Committing on Intellij">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/Morse Code Translator.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/~$rse Code Translator.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/LAB balanced parentheses.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/RPNexpressionHW.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/~$B balanced parentheses.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/~$NexpressionHW.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/~$verseAutoHangman.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/~WRL1721.tmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/taylanu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/MyQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/Queueable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/Infix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/MyStack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/Postfix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/Stackable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/stackTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/TODO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NetAdmin/trafficSim_graphics_shell/DueAfter1stQ.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Queues/MyQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Queues/Queueable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/Morse Code Translator.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/Infix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/Postfix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/RPNexpressionHW.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/ReverseAutoHangman.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/Stackable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/stackTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/BlackBox.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/BlackBox.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/BlackBox/Game/Game.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/Laser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/MorseCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/MorseCodeDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/PirateTalk.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/PirateTalkDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/bbDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/filesScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/fizzbuzz.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/morsecode/Morse Code Translator.doc" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvCSAB/Queues/Traffic Sim.doc" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/Traffic Sim.doc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvCSAB/Queues/trafficSim_graphics_shell/MyGridExample.java" afterPath="$PROJECT_DIR$/NetAdmin/trafficSim_graphics_shell/MyGridExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvCSAB/Queues/trafficSim_graphics_shell/MyGridExampleDriver.java" afterPath="$PROJECT_DIR$/NetAdmin/trafficSim_graphics_shell/MyGridExampleDriver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/ExpressionLab.txt" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ExpressionLab.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AdvCSAB/Stacks/LAB balanced parentheses.doc" afterPath="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/~WRL3770.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AdvCSAB/SetAndMaps.class" afterPath="$PROJECT_DIR$/out/production/AdvCSAB/SetAndMaps.class" />
+    <list default="true" id="24671942-87f8-487e-acd2-b1988afa0a33" name="Default" comment="Committing all 1Q work. Done with Queues, Stacks, Hangman, etc.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/AdvCSAB.iml" afterPath="$PROJECT_DIR$/AdvCSAB/AdvCSAB.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/AImovement.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/AImovement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Blop.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Blop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Bullet.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Bullet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Custom.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Custom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Dinosaur.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Dinosaur.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Entity.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Explosion.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Explosion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Gorilla.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Gorilla.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/ImageDisplay.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/ImageDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Insect.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Insect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MMMDriver.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MMMDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MMMPanel.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MMMPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MapBuilder.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MapBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Monster.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Monster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MonsterMaker.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/MonsterMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Ordinance.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Ordinance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Player.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Robot.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Spawner.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Spawner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Structure.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Structure.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Utilities.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Vehicle.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Vehicle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Worm.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/Worm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/mdfive.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/mdfive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/playerScore.java" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MMM_Project/playerScore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MashMangleMunch.iml" afterPath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MashMangleMunch.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Misc/BlackBox/Game/Laser.java" afterPath="$PROJECT_DIR$/AdvCSAB/Misc/BlackBox/Game/Laser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Misc/BlackBox/Game/bbDriver.java" afterPath="$PROJECT_DIR$/AdvCSAB/Misc/BlackBox/Game/bbDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Misc/fizzbuzz.java" afterPath="$PROJECT_DIR$/AdvCSAB/Misc/fizzbuzz.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/SetAndMaps.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/SetAndMaps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCode.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCodeDriver.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCodeDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/PirateTalk.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/PirateTalk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/PirateTalkDriver.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/PirateTalkDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/filesScanner.java" afterPath="$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/filesScanner.java" />
     </list>
     <ignored path="SY16-17.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,26 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ExpressionLab.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ExpressionLab.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReverseAutoHangman.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/TODO">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,23 +35,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/MyStack.java">
+      <file leaf-file-name="MyGridExample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding>
-                <element signature="docComment;class#MyStack#0" expanded="false" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyGridExampleDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExampleDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/MyQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,6 +77,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="taylanu &lt;taylanu@xpshost.com&gt;" />
         <option value="taylanu &lt;taylanu@localhost&gt;" />
       </list>
     </option>
@@ -212,6 +110,8 @@
         <option value="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/MyStack.java" />
         <option value="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/TODO" />
         <option value="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.java" />
+        <option value="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExample.java" />
+        <option value="$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExampleDriver.java" />
       </list>
     </option>
   </component>
@@ -222,8 +122,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="703" />
-    <option name="width" value="1225" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -288,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -335,14 +236,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ReverseAutoHangman" />
+              <option name="myItemId" value="trafficSim" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -469,15 +369,15 @@
     <option name="totallyTimeSpent" value="10675000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="703" y="0" width="1225" height="1038" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="0" width="976" height="1038" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.49506038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.49506038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10572917" sideWeight="0.5049396" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22419533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -495,7 +395,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30076838" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.028540066" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027746947" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -513,7 +413,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Committing on Intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing on Intellij" />
+    <MESSAGE value="Committing all 1Q work. Done with Queues, Stacks, Hangman, etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing all 1Q work. Done with Queues, Stacks, Hangman, etc." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -527,20 +428,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Sets and Maps/morsecode/MorseCodeDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/TODO">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -768,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/MyQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AdvCSAB/Sets and Maps/pirateTalk/PirateTalk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -814,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-241">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,22 +704,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/MyStack.java">
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#MyStack#0" expanded="false" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="186">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ExpressionLab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -852,18 +726,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ExpressionLab.txt">
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/MyStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/MyQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/ReverseAutoHangman/ReverseAutoHangman.java">
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExampleDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="66">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdvCSAB/Stacks and Queues/trafficSim/MyGridExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>

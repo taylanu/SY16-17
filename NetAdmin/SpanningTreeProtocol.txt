@@ -1,0 +1,9 @@
+6.6 :
+
+Spanning Tree Protocol
+Takes broadcast frames and propogates them across
+
+STP works out of the box. Have to configure to stop from message loops.
+If mac address is same on both root and bridge, then the switch is in fact the root bridge.
+
+To select a new root, manually lower the priority of the spanning tree root.
