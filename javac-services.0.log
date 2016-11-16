@@ -1,2 +1,0 @@
-INFO	?	main	2016-10-27T15:16:04.426Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
-INFO	?	main	2016-10-27T15:16:04.625Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Users\taylanu\Documents\SY16-17\AdvCSAB\Sets and Maps\SetAndMaps.java]
