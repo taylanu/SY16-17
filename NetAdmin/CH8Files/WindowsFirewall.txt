@@ -1,0 +1,2 @@
+Windows firewall has port and application level firewall features.
+Make sure that block all external connections is disabled if programs like RDP or Web Servers are to be used on the host system.
