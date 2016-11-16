@@ -13,7 +13,7 @@ import trafficSim.MyGridExample;
       public static void main(String[]args)
       {
       
-         screen = new MyGridExample(/*add arguments for delay and prob for each lane  and number of cycles*/);
+         screen = new MyGridExample(280,35,120,28); /*add arguments for delay and prob for each lane  and number of cycles*/
          JFrame frame = new JFrame("TRAFFIC SIM");	//window title
          frame.setSize(800, 800);					//Size of game window
          frame.setLocation(100, 50);				//location of game window on the screen

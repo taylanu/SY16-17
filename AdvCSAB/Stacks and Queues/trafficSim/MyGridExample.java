@@ -8,8 +8,9 @@ import javax.swing.JPanel;
    import java.awt.event.KeyEvent;
    import java.awt.event.ActionListener;
    import java.awt.event.ActionEvent;
+import java.util.Queue;
 
-   public class MyGridExample extends JPanel
+public class MyGridExample extends JPanel
    {
         
       private static final int SIZE=40;	//size of cell being drawn
@@ -17,36 +18,66 @@ import javax.swing.JPanel;
       private static final int DELAY=100;	//#miliseconds delay between each time the enemy moves and screen refreshes for the timer
    
       private Timer t;							//used to set the speed of the enemy that moves around the screen
-   
+
    //define 2 queues for lanes of traffic (main & maple)
    //define values for delay and prob for each lane (mainDelay, mainProb, mapleDelay, mapleProb)
-   //private boolean mainGreen (true: green on main & red on maple, false: red on main & green on maple)
-   //private int frameNum;	count of frames to keep track of time
    //define number of cycles
    //define counter for number of cycles completed (numCycles)
-      public MyGridExample(/*add arguments for delay and prob for each lane and number of cycles*/)
+   private static boolean mainGreen = true; //(true: green on main & red on maple, false: red on main & green on maple)
+   private static int frameNum;	//count of frames to keep track of time
+      private static int numCycles = 0;
+      private static int mainDelay, mainProb, mapleDelay, mapleProb;
+      int lightcycles;
+
+      private static MyQueue main;// = new MyQueue();
+      private static MyQueue maple; // = new MyQueue();
+      public MyGridExample(int mainD,int mainP, int mapleD, int mapleP) // int mainDelay, int mainProb, int mapleDelay, int mapleProb
       {
-      //create 2 queues for lanes of traffic
-      //assign values for delay and prob for each lane  and number of cycles
-      /*
-      mainGreen = true;
-      frameNum = 0;
-      numCycles = 0;
-      */
+         main = new MyQueue();
+         maple = new MyQueue();
+         mainDelay = mainD; mainProb = mainP; mapleDelay = mapleD; mapleProb = mapleD;
+         lightcycles = 100;
+          randgen(mainProb,main);
+          randgen(mapleProb,maple);
+          display();
+          stats();
+
+
          t = new Timer(DELAY, new Listener());				//the higher the value of the first argument, the slower the enemy will move
          t.start();
       
       }
-   
-   
-   	//post:  shows different pictures on the screen in grid format depending on the values stored in the array board
+
+       private void display() {
+           System.out.println("Main Queue: " + main.toString());
+           System.out.println("Maple Queue: " + maple.toString());
+       }
+
+
+       //post:  shows different pictures on the screen in grid format depending on the values stored in the array board
    	//			0-blank, 1-white, 2-black and gives priority to drawing the player
       public void showBoard(Graphics g)	
       {
-         int x =SIZE, y=SIZE;		//upper left corner location of where image will be drawn
+         int x =SIZE, y=SIZE;		//upper left corner location of where image will be drawn. Dimensions of Board.
+         //for(Iterator i=main.iterator(); i.hasNext())
+         
+         //GFX MODE ONLY
          //draw maple from origin to the right x+=SIZE;
-      	//droaw main from origin down y+=SIZE;
+      	//draw main from origin down y+=SIZE;
       }
+       private double randgen(int prob, MyQueue q){
+           int gen = (int) (Math.random()*100) + 1;
+           if (prob > gen){
+               q.add("*");
+           }
+           return gen;
+       }
+       private void stats(){
+           System.out.println("Queue on Main " + main.size());
+           System.out.println("Queue on Maple " + maple.size());
+           System.out.println("Number of cycles run "  + numCycles);
+           System.out.println("Number of frames displayed " + frameNum);
+       }
    
       //THIS METHOD IS ONLY CALLED THE MOMENT A KEY IS HIT - NOT AT ANY OTHER TIME
    	//pre:   k is a valid keyCode
@@ -72,12 +103,13 @@ import javax.swing.JPanel;
          public void actionPerformed(ActionEvent e)	//this is called for each timer iteration - traffic mechanics
          {
        //convert english to code
-         if(numCycles completed >= cycles)
+             stats();
+         if(numCycles >= lightcycles)
          {
-         show stats (results);
+         stats(); //show stats (results);
          System.exit(1);
          }
-         if(mainGreen)
+         if(mainGreen)//checks boolean condition
          {
          if(frameNum >= mainDelay)
          {
@@ -86,9 +118,10 @@ import javax.swing.JPanel;
          }
          else
          {
-         maybe add a car to main and/or maple
-         if main has cars
-             remove a car from main
+         main.add("*");//maybe add a car to main and/or maple
+         maple.add("*");
+         if (!main.isEmpty())//main has cars
+             main.remove();//remove a car from main
          frameNum++;	 
          }
          }
@@ -101,14 +134,16 @@ import javax.swing.JPanel;
          }
          else
          {
-         maybe add a car to main and/or maple
-         if main has cars
-             remove a car from maple
+         //maybe add a car to main and/or maple
+         if(!main.isEmpty())
+             maple.remove(); //remove a car from maple
           frameNum++;	 	 
          }
          }
+
             repaint();
          }
+
       }
    
    }
