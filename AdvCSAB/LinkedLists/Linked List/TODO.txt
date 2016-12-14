@@ -1,0 +1,15 @@
+Linked List Requires:
+Linked List driver is functioning correctly.
+
+Completed:
+ISEMPTY (Done)
+ADDFIRST (DONE)
+REMOVE FIRST (DONE)
+SIZE (Done)
+GET at Index (DONE)
+ADD at Index (DONE)
+SET at Index (DONE)
+
+To Write:
+REMOVE at Index
+GETLAST (sorta)
