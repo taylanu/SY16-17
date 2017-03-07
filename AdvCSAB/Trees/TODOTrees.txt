@@ -1,0 +1,8 @@
+3/3/17 DUE:
+DO 'searchHelper'
+DO 'searchParent'
+DO 'isLeaf' (DONE)
+DO 'oneKid'
+DO 'sizeHelper'
+DO 'heightHelper'
+DO 'removeHelper'

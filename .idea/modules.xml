@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SY16-17/AdvCSAB/AdvCSAB.iml" filepath="$PROJECT_DIR$/SY16-17/AdvCSAB/AdvCSAB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MashMangleMunch.iml" filepath="$PROJECT_DIR$/AdvCSAB/MashMangleMunch/MashMangleMunch.iml" />
+    </modules>
+  </component>
+</project>
